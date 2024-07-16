@@ -11,8 +11,13 @@
     --dark-grey: #151D28;
     --light-gray: #EDF0F5;
 
+    --containerWidth: 69rem;
+    --containerPadding: 1rem;
+
     font-family: "Nunito", sans-serif;
     font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
 
     color-scheme: light dark;
     color: var(--primary-color);
@@ -24,10 +29,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+.container {
+    margin-inline: auto;
+    max-width: calc(var(--containerWidth) + var(--containerPadding) * 2);
+    padding: 0 var(--containerPadding);
+    width: 100%;
 }

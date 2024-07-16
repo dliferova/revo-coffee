@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: "30rem",
-        md: "48rem",
-        lg: "61rem",
-        xl: "90rem",
+        sm: "30rem", // 480px
+        md: "48rem", // 768px
+        lg: "61rem", // 976px
+        xl: "67.5rem", // 1080px
+        "2xl": "90rem", // 1440px
       },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
