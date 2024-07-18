@@ -1,4 +1,7 @@
 @import "./styles/fonts.css";
+@import "swiper/css";
+@import "swiper/css/grid";
+@import "swiper/css/pagination";
 
 @tailwind base;
 @tailwind components;
@@ -10,9 +13,11 @@
     --accent-color-lighter: #F9F5E8;
     --dark-grey: #151D28;
     --light-gray: #EDF0F5;
+    --light-bg: #f9fbff;
 
-    --containerWidth: 69rem;
-    --containerPadding: 1rem;
+    --container-width: 69rem;
+    --container-lg-width: 90rem;
+    --container-padding: 1rem;
 
     font-family: "Nunito", sans-serif;
     font-weight: 400;
@@ -29,9 +34,20 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     margin-inline: auto;
-    max-width: calc(var(--containerWidth) + var(--containerPadding) * 2);
-    padding: 0 var(--containerPadding);
+    max-width: calc(var(--container-width) + var(--container-padding) * 2);
+    padding: 0 var(--container-padding);
+    width: 100%;
+}
+
+.container--lg {
+    margin-inline: auto;
+    max-width: calc(var(--container-lg-width) + var(--container-padding) * 2);
+    padding: 0 var(--container-padding);
     width: 100%;
 }

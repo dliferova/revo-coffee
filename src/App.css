@@ -12,3 +12,7 @@
     width: 100%;
     max-width: 14.125rem;
 }
+
+.linear-gradient {
+    background: linear-gradient(90deg, var(--primary-color) 40%, var(--light-gray) 20%, var(--light-bg) 50%);
+}
